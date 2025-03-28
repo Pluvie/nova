@@ -1,0 +1,6 @@
+#!/bin/bash
+bin/compile nova          \
+  --include ./src/nova.h  \
+  -O3 -march=native       \
+  -o exe/libnova.so       \
+  -shared -fPIC
